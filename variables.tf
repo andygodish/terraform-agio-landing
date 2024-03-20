@@ -13,11 +13,6 @@ variable "location" {
   nullable    = false
   description = "The AZURE region location where this resource will be deployed to"
 }
-variable "resource_group_name" {
-  type        = string
-  nullable    = false
-  description = "The resource group name this private endpoint needs to be created in"
-}
 variable "sub_prefix" {
   type        = string
   nullable    = false
