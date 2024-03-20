@@ -8,6 +8,12 @@ variable "app_prefix" {
   nullable    = false
   description = "The 3 or 4 character mnemonic for the application name "
 }
+variable "asp_sku" {
+  type        = string
+  nullable    = false
+  description = "The SKU for the asp. Link: https://azure.microsoft.com/en-us/pricing/details/app-service/windows/"
+  default     = "B1"
+}
 variable "location" {
   type        = string
   nullable    = false
