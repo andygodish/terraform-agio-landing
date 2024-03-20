@@ -22,7 +22,7 @@ module "appserviceplan" {
   sub_prefix = var.sub_prefix
   asp_sku    = var.asp_sku
 
-  tag = var.tags
+  tags = var.tags
 }
 
 module "linuxwebapp" {
