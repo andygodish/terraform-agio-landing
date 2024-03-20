@@ -27,7 +27,7 @@ module "appserviceplan" {
 
 module "linuxwebapp" {
   source  = "app.terraform.io/andygio/linuxwebapp/azure"
-  version = "1.0.2"
+  version = "1.0.3"
 
   resource_group_name = module.resourcegroup.rg_name
   asp_plan_id         = module.appserviceplan.asp_id
