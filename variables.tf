@@ -23,9 +23,3 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
-variable "unique_name_string" {
-  description = "Provide this value if you want to create a unique name combination for this resource"
-  type        = string
-  nullable    = true
-  default     = ""
-}
