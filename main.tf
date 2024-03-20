@@ -32,10 +32,11 @@ module "linuxwebapp" {
   resource_group_name = module.resourcegroup.rg_name
   asp_plan_id         = module.appserviceplan.asp_id
 
-  app_env    = var.app_env
-  app_prefix = var.app_prefix
-  location   = var.location
-  sub_prefix = var.sub_prefix
+  app_env           = var.app_env
+  app_prefix        = var.app_prefix
+  location          = var.location
+  sub_prefix        = var.sub_prefix
+  application_stack = var.application_stack
 
   tags = var.tags
 }
