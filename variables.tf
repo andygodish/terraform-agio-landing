@@ -8,6 +8,11 @@ variable "app_prefix" {
   nullable    = false
   description = "The 3 or 4 character mnemonic for the application name "
 }
+variable "app_settings" {
+  type        = map(string)
+  default     = {}
+  description = "Application setting"
+}
 variable "asp_sku" {
   type        = string
   nullable    = false
