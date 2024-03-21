@@ -24,6 +24,11 @@ variable "application_stack" {
   default     = {}
   description = "Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks"
 }
+variable "hostname" {
+  description = "Optional custom hostname for the web app."
+  type        = string
+  default     = null
+}
 variable "location" {
   type        = string
   nullable    = false

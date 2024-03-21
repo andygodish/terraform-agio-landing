@@ -38,6 +38,7 @@ module "linuxwebapp" {
   sub_prefix        = var.sub_prefix
   application_stack = var.application_stack
   app_settings      = var.app_settings
+  hostname          = var.hostname
 
   tags = var.tags
 }
